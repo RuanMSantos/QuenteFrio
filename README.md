@@ -5,5 +5,5 @@
 
 ## comando para executar o programa
 ```
-QuenteFrio.dll
+dotnet QuenteFrio.dll
 ```
