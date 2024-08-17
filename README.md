@@ -1,2 +1,9 @@
 # QuenteFrio
-Atividade PC1 - Etec Adolpho Berezin 2024
+
+[Link para baixar o programa](QuenteFrio.zip)
+
+
+## comando para executar o programa
+```
+QuenteFrio.dll
+```
