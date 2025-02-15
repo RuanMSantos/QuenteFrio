@@ -73,6 +73,9 @@ do
     {
         Console.ForegroundColor = ConsoleColor.DarkRed;
         Console.WriteLine("\nEstá pelando!!!");
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+        Console.WriteLine();
+        Console.WriteLine(Dica(numeroGerado, numeroDigitado));
         Console.ResetColor();
     }
 
@@ -80,6 +83,9 @@ do
     {
         Console.ForegroundColor = ConsoleColor.DarkYellow;
         Console.WriteLine("\nEstá quente!");
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+        Console.WriteLine();
+        Console.WriteLine(Dica(numeroGerado, numeroDigitado));
         Console.ResetColor();
     }
 
@@ -87,6 +93,9 @@ do
     {
         Console.ForegroundColor = ConsoleColor.DarkBlue;
         Console.WriteLine("\nEstá congelando...");
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+        Console.WriteLine();
+        Console.WriteLine(Dica(numeroGerado, numeroDigitado));
         Console.ResetColor();
     }
 
@@ -94,6 +103,9 @@ do
     {
         Console.ForegroundColor = ConsoleColor.DarkCyan;
         Console.WriteLine("\nEstá frio");
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+        Console.WriteLine();
+        Console.WriteLine(Dica(numeroGerado, numeroDigitado));
         Console.ResetColor();
     }
 
@@ -127,4 +139,11 @@ int GerarDiferencaNumeros(int a, int b)
     a = numeroGerado;
     b = numeroDigitado;
     return numeroGerado - numeroDigitado;
+}
+
+string Dica(int a, int b){
+    if (a > b){
+        return "Tente um número maior";
+    }
+    return "Tente um número menor";
 }
